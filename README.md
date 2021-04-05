@@ -35,11 +35,11 @@ Training Parameters
 Here are the parameters we'll specify to `grid train`:
 
 **Grid flags:**
-1. **--grid_name**
+1. **--grid_name:** specifies a name for your training run
 2. **--grid_instance_type:** defines number of GPUs and memory
 3. **--grid_gpus:** the number of GPUs per experiment
-4. **--grid_datastore_name**
-5. **--grid_datastore_version**
+4. **--grid_datastore_name:** the name of the datastore (created above) that you'd like to attach to this training run
+5. **--grid_datastore_version:** the version of the datatstore to attach to this training run (defaults to 1)
 
 Then we'll specify the script we're using to train our model followed by the script arguments. 
 
