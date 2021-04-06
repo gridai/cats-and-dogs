@@ -62,10 +62,10 @@ grid train  \
   --grid_name cats-v-dogs \
   --grid_instance_type g3.4xlarge  \
   --grid_gpus 1  \
-  --grid_datastore_name cats-and-dogs\
+  --grid_datastore_name cats-and-dogs-ds\
   --grid_datastore_version 1 \
   run.py \
-  --data_dir /opt/datastore/cats_and_dogs/PetImages \
+  --data_dir /opt/datastore/cats_and_dogs_data/PetImages \
   --gpus 1 \
   --precision 16 \
   --max_epochs 10
