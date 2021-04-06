@@ -12,7 +12,7 @@ def download_zip_data(url, path="data/"):
             file.extractall(path)
 
 
-def remove_bad_images(bad_images_path='bad_images.txt', image_folder='cats_and_dogs/'):
+def remove_bad_images(bad_images_path='bad_images.txt', image_folder='cats_and_dogs_data/'):
     bad_img_filepaths = Path(bad_images_path).open().readlines()
     deleted_files = []
     for bad_img_file in bad_img_filepaths:
@@ -25,7 +25,7 @@ def remove_bad_images(bad_images_path='bad_images.txt', image_folder='cats_and_d
 
 def main():
     if not Path('cats_and_dogs/').exists():
-        download_zip_data(URL, 'cats_and_dogs/')
+        download_zip_data(URL, 'cats_and_dogs_data/')
     remove_bad_images()
 
 
