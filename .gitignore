@@ -129,4 +129,4 @@ dmypy.json
 .pyre/
 
 # Cats and Dogs dataset from Microsoft
-cats_and_dogs/
+cats_and_dogs_data/
