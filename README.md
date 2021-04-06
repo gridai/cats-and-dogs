@@ -24,7 +24,7 @@ python get_data.py
 Now that you have some data, let's upload that as a Grid Datastore
 
 ```
-grid datastores create --source cats_and_dogs_data --name cats-and-dogs-ds
+grid datastores create --source cats_and_dogs_data/PetImages --name cats-and-dogs-ds
 ```
 
 Here the `--source` represents the path to the data which will be uploaded. The `--name` will be used as the datastore name in Grid. 
@@ -65,7 +65,7 @@ grid train  \
   --grid_datastore_name cats-and-dogs-ds\
   --grid_datastore_version 1 \
   run.py \
-  --data_dir /opt/datastore/cats_and_dogs_data/PetImages \
+  --data_dir /opt/datastore \
   --gpus 1 \
   --precision 16 \
   --max_epochs 10
